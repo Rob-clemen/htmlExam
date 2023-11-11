@@ -23,14 +23,6 @@ body {
   opacity: 0;
 }
 
-@keyframes flicker {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 .nav-link {
   color: #fff;
@@ -39,17 +31,31 @@ body {
 .nav-link.active {
   background-color: #1c1c1c;
 }
-
-.carousel-indicators button {
-  background-color: #1c1c1c;
-  border-color: #1c1c1c;
+.carousel-item {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #fff;
+.carousel-item h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 32px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  text-align: center;
+  margin-top: 200px;
 }
 
+.carousel-caption {
+  text-align: center;
+}
+
+.carousel-caption p {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
 .footer {
   background-color: #1c1c1c;
   color: #fff;
@@ -70,9 +76,6 @@ body {
   margin-bottom: 30px;
 }
 
-.carousel {
-  margin-bottom: 30px;
-}
 
 .social-icons {
   display: flex;

@@ -2,9 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Tuto</title>
+  <style>
+    body {
+      background-color: #121212; /* Thème sombre du ciel */
+      color: #fff;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #aaa;
+    }
+
+    .video-preview {
+      max-width: 300px;
+    }
+  </style>
 </head>
 <body>
-
+<h1>Liens vers des vidéos sur la technologie</h1>
+<ul>
+  <li>
+    <a href="https://www.youtube.com/watch?v=abc123">
+      <video class="video-preview" controls poster="video1-preview.jpg">
+        <source src="video1.mp4" type="video/mp4">
+      </video>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.youtube.com/watch?v=def456">
+      <video class="video-preview" controls poster="video2-preview.jpg">
+        <source src="video2.mp4" type="video/mp4">
+      </video>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.youtube.com/watch?v=ghi789">
+      <video class="video-preview" controls poster="video3-preview.jpg">
+        <source src="video3.mp4" type="video/mp4">
+      </video>
+    </a>
+  </li>
+</ul>
 </body>
 </html>

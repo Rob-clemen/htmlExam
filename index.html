@@ -22,28 +22,39 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
   <style>
+    /* Ajout de nouvelles technologies pour rendre la page plus attrayante */
+    .new-tech {
+      background-color: #F8F8F8;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
+    .new-tech h2 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .new-tech img {
+      max-width: 200px;
+      margin-bottom: 10px;
+    }
+
+    .new-tech p {
+      color: #777;
+    }
   </style>
 
   <meta name="theme-color" content="#121212">
 </head>
 
 <body>
-
-<script>
-  // Génération de l'écriture en fond
-  const backgroundText = document.getElementById('background-text');
-  const message = "Le numérique c'est cool";
-  const messageArray = message.split('');
-
-  messageArray.forEach((char, index) => {
-    const span = document.createElement('span');
-    span.textContent = char;
-    span.style.animationDelay = `${index * 0.05}s`;
-    backgroundText.appendChild(span);
-  });
-</script>
-
+<div class="new-tech">
+  <h2>Nouvelles Technologies</h2>
+  <img src="img/monde.jpg" alt="Nouvelles Technologies">
+  <p>Découvrez les dernières avancées technologiques qui transforment notre monde !</p>
+</div>
 </body>
 
 </html>
