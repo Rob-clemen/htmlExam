@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+  <meta name="theme-color" content="#121212">
+</head>
+
+<body>
+<nav class="shadow-sm">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="accueil.html">Accueil</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="articles.html">Articles</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="tendances.html">Tendances</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="tutoriels.html">Tutoriels</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="evenements.html">Evenement</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="critiques.html">Critique</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Div pour afficher le contenu chargé -->
+<div id="content">
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+  // Fonction pour charger le contenu de la page lorsqu'un lien est cliqué
+  $(document).ready(function() {
+    $('a.nav-link').click(function(e) {
+      e.preventDefault(); // Empêche le comportement par défaut du lien
+      var href = $(this).attr('href'); // Récupère l'URL de la page à charger
+      $('#content').load(href); // Charge le contenu de la page dans la div avec l'id "content"
+    });
+  });
+</script>
+
+
+
+</body>
+
+</html>
