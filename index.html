@@ -21,6 +21,9 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+  <style>
+
+  </style>
 
   <meta name="theme-color" content="#121212">
 </head>
@@ -71,7 +74,19 @@
   });
 </script>
 
+<script>
+  // Génération de l'écriture en fond
+  const backgroundText = document.getElementById('background-text');
+  const message = "Le numérique c'est cool";
+  const messageArray = message.split('');
 
+  messageArray.forEach((char, index) => {
+    const span = document.createElement('span');
+    span.textContent = char;
+    span.style.animationDelay = `${index * 0.05}s`;
+    backgroundText.appendChild(span);
+  });
+</script>
 
 </body>
 
